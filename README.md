@@ -24,3 +24,14 @@ piece of json
 -  Once you've added your db config as listed above , go the src folder from your
 terminal and execute `npx sequelize db:create` 
 ```
+
+## DB Design
+
+- Airplane Table
+- Flight
+- Airpot
+- City
+
+- A flight belongs to an airoplane but one airoplane can be used in multiple flights
+- A city has many airpots but one airpot belongs to one city
+- One airpot  can have many flights, but a flight belongs to one airpot
