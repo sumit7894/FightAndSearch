@@ -20,7 +20,7 @@ const create = async (req,res) =>{
         return res.status(500).json({
             data:{},
             success : false,
-            message: 'Not able to crate a city',
+            message: 'Not able to create a city',
             err: error
         })
     }
@@ -52,7 +52,7 @@ const get = async(req,res)=>{
         return res.status(200).json({
             data:response,
             success : true,
-            message:"Successfully fetched a city",
+            message:"Successfully fetched a city",  
             err:{}
         })
     }catch(error){
