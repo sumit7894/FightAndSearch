@@ -35,7 +35,7 @@ class CityRepository{
             //         id:cityId
             //     }
             // });
-            //for getting the updated data we have used the below approach
+            //for getting the updated data we have used the below approach  
             const city = await City.findByPk(cityId);
             city.name = data.name;
             await city.save();
@@ -54,6 +54,14 @@ class CityRepository{
             console.log("Somthing went wrong in the repo layer");
             throw{error};
         }
+    }
+
+    async getAllCities(){
+        const cities = await City.findAll();
+        return cities;
+    }catch(error){
+        console.log("Somthing went wrong in the repo layer");
+        throw{error};
     }
 }
 
