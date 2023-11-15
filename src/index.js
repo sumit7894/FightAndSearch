@@ -16,6 +16,9 @@ const setupAndStartServer = async ()=>{
         if(process.env.SYNC_DB){
             db.sequelize.sync({alter:true});
         }
+        await Airplane.create({
+            modelNumber: 'Bombardier CRJ'
+        });
     });
 }
 
