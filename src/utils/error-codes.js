@@ -4,7 +4,7 @@ const ClientErrors = Object.freeze({
     NOT_FOUND:404
 });
 
-const ServerErrors = Object.freeze({
+const ServerErrorsCodes = Object.freeze({
   INTERNAL_SERVER_ERROR: 500,
   NOT_IMPLEMENTED: 501
 });
@@ -16,6 +16,6 @@ const SuccessCodes = Object.freeze({
 
 module.exports = {
     ClientErrors,
-    ServerErrors,
+    ServerErrorsCodes,
     SuccessCodes
 }
